@@ -1,0 +1,45 @@
+<html>
+    <body style="padding:0px; margin:0px">
+        <div style="padding:0px; margin:0px">
+            <div id="navigation" style="text-align:center;float:left; width: 10%; height:100%; background-color: #001B4D; ">
+                <img style=" margin:5px; padding:5px" src="./static/DO_Logo_Vertical_white.png" height="100px" />
+            </div>
+            <div id="navigation" style="float:left; width: 10px; height:100%;">
+            </div>
+            <div style="float:left; width:55%">
+                <div style="height: 10%; ">
+                    <h1 style=" text-align:left; font-family:arial;"><br>Chatty Chat</h1>
+                </div>
+                <div  style="float: left; position:relative;border:1px black solid;height:80%;width:100%;  overflow:scroll">
+            
+                    <div id="history" style="position: absolute; bottom:0px; width:100%; height:100%; overflow-y:scroll;">
+                        <table width="100%" onload="scrollToBottom()">
+                            {% for user_time, user_input, response_time, response in history %}
+                            <tr>
+                                <td style="text-align: right;"><strong>user</strong><br>{{user_time}}<br><br>{{user_input|safe}}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>model</strong><br>{{response_time}}<br><br>{{response|safe}}</td>
+                            </tr>           
+                            {% endfor %}               
+                        </table>
+                    </div>
+                </div>
+                <div style="height:10px; width:100%; float:left;"></div>
+                <div>
+                    <form method="POST">
+                        <input name="user_input" type=""text" style="width:52%" placeholder="Enter your message"/>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            function scrollToBottom() {
+                var history = document.getElementById("history")
+                history.scrollTop = history.scrollHeight
+            }
+            scrollToBottom()
+        </script>
+    </body>
+</html>
