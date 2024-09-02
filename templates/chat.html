@@ -28,7 +28,7 @@
                 <div style="height:10px; width:100%; float:left;"></div>
                 <div>
                     <form method="POST">
-                        <input name="user_input" type=""text" style="width:52%" placeholder="Enter your message"/>
+                        <input id="user_input" name="user_input" type=""text" style="width:52%" placeholder="Enter your message"/>
                         <button type="submit">Send</button>
                     </form>
                 </div>
@@ -38,6 +38,9 @@
             function scrollToBottom() {
                 var history = document.getElementById("history")
                 history.scrollTop = history.scrollHeight
+
+                var user_input=document.getElementById("user_input")
+                user_input.focus()
             }
             scrollToBottom()
         </script>
