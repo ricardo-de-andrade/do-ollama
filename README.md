@@ -73,6 +73,12 @@ And, to invoke the Ollama API:
 > [!NOTE]
 > LLMs are non-deterministic and as you are running your own prompts into your own installation, the code generated may look slightly different than the code I show as example here.
 
+> [!NOTE 2]
+> There are no guarantees that the code shown here, or the code generated in your attempts will run out of the box.
+> The main intent here is to show the though process on how to leverag a LLM to help you build your code faster.
+> You should be able to decide whether the code will work or not, and better yet, make it work after teh base is generated.
+
+
 For this demo, we'll build the app as a simple conversation with the model.
 
 Back at the Ollama prompt interface, enter the following sample prompts, in order to get their respective sample base code for our app.
