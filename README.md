@@ -249,6 +249,7 @@ if __name__ == "__main__":
 4. Apply some 'visual' to the app with a left column and the DO logo
 5. In the history, display the text with a timestamp, and render as markdown
 6. Align the model's response to the left and the user's input to the right
+7. Use the /chat API instead of /generate for a better chat experience
 
 
 ![](/assets/do-ollama.png)
