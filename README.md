@@ -75,8 +75,8 @@ And, to invoke the Ollama API:
 
 > [!CAUTION]
 > There are no guarantees that the code shown here, or the code generated in your attempts will run out of the box.
-> The main intent here is to show the though process on how to leverag a LLM to help you build your code faster.
-> You should be able to decide whether the code will work or not, and better yet, make it work after teh base is generated.
+> The main intent here is to show the thought process on how to leverage a LLM to help you build your code faster.
+> You should be able to decide whether the code will work or not, and better yet, make it work after the base is generated.
 
 
 For this demo, we'll build the app as a simple conversation with the model.
